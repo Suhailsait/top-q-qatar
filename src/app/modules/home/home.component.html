@@ -1,0 +1,19 @@
+<owl-carousel-o [options]="customOptions" #owlCat>
+  <ng-container>
+    <ng-template carouselSlide let-owlItem>
+      <div class="slide" [@activeSlide]="owlItem.isCentered ? 'active' : 'inActive'">
+        <img src="/assets/images/slide1.jpg" alt="image">
+      </div>
+    </ng-template>
+    <ng-template carouselSlide let-owlItem>
+      <div class="slide" [@activeSlide]="owlItem.isCentered ? 'active' : 'inActive'">
+        <img src="/assets/images/slide2.jpg" alt="image">
+      </div>
+    </ng-template>
+    <ng-template carouselSlide let-owlItem>
+      <div class="slide" [@activeSlide]="owlItem.isCentered ? 'active' : 'inActive'">
+        <img src="/assets/images/slide3.jpg" alt="image">
+      </div>
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>

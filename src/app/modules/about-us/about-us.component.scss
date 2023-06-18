@@ -1,0 +1,51 @@
+.sec-1 {
+    height: 45vh;
+    background-image: url(/assets/images/about-back.jpg);
+    background-color: grey;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    .welcome-note {
+        position: relative;
+        margin-left: 15rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        color: #FFF;
+        @media only screen and (max-width:800px){
+               margin-left: 5rem;
+        }
+        .welcome-title {
+            font-size: 3.8rem;
+            font-weight: 800;
+            @media only screen and (max-width: 800px){
+               font-size: 3rem;
+               font-weight: 600;
+            }
+            @media only screen and (max-width: 426px){
+               font-size: 2rem;
+               font-weight: 500;
+            }
+        }
+
+        .welcome-body {
+            font-weight: 600;
+            font-size: 1.6rem;
+            max-width: 70rem;
+            @media only screen and (max-width: 800px){
+                font-size: 1.5rem;
+                font-weight: 400;
+                max-width: 50rem;
+            }
+            @media only screen and (max-width: 426px){
+                font-size: 1.1rem;
+                font-weight: 400;
+                max-width: 40rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+header {
+  .container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+    @media only screen and (max-width: 800px){
+        padding: 1rem 0;
+    }
+    .logo {
+      a {
+        img {
+          width: 20rem;
+          @media only screen and (max-width: 425px){
+            width: 10rem;
+          }
+        }
+      }
+    }
+
+    .menus {
+        @media only screen and (max-width: 800px){
+            display: none;
+        }
+      .menu-list {
+        display: flex;
+        gap: 4rem;
+        font-size: 1.6rem;
+        li {
+          a {
+            color: #000;
+          }
+          &.active {
+            .link {
+              color: #cda274;
+            }
+          }
+          &:hover {
+            .link {
+              color: #cda274;
+            }
+          }
+        }
+      }
+    }
+
+    .menu-tool {
+      display: none;
+      width: 0rem;
+      background-color: #fff;
+      @media only screen and (max-width:800px) {
+        display: flex;
+      }
+      .menu-items {
+        display: none;
+        position: absolute;
+        top: 7rem;
+        right: 0;
+      }
+      .menu-items.show {
+        display: block;
+        .menu-list{
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+          width: 10rem;
+          font-size: 1.5rem;
+          @media only screen and (max-width: 800px) {
+            background-color: #fff;
+            padding: 2rem;
+            width: 20rem;
+            height: 100vh;
+          }
+          @media only screen and (max-width: 800px) {
+            padding: 1.5rem;
+            width: 16rem;
+            height: 100vh;
+          }
+          li {
+            a {
+              color: #000;
+            }
+            &.active {
+              .link {
+                color: #cda274;
+              }
+            }
+            &:hover {
+              .link {
+                color: #cda274;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<section>
+  <span class="c-title">
+    <span class="title"> Contact Us </span>
+  </span>
+  <span class="locate">OUR LOCATION</span>
+  <aside class="contact">
+    <span class="details" *ngIf="!formToggle">
+      <span class="see-in">
+        <span class="title">See Us In Person</span>
+        <span class="contents">
+          We would love to hear from you! If you have any questions, feedback,
+          or inquiries about our products and services, please feel free to
+          reach out to us. Our dedicated team is ready to assist you.
+        </span>
+      </span>
+      <span class="our-loc">
+        <span class="title">Our Location</span>
+        <span class="contents">
+          Al MIRQAB Street 840,Zone 39,Building No 53 DOHA QATAR
+        </span>
+        <span class="num"> (+974) 506-341-11 / 666-887-39 </span>
+        <span class="email"> Email : info@topqatar.com </span>
+      </span>
+      <span class="btn">
+        <button class="drop-btn" (click)="toggle()">Connect Us</button>
+      </span>
+    </span>
+    <span class="contact-form" *ngIf="formToggle">
+      <span class="contact-title"> Connect with us </span>
+      <form>
+        <mat-form-field appearance="outline">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Name" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Leave a comment</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+        <span class="btns">
+            <button class="submit-btn">Submit</button>
+            <span class="cancel-btn" (click)="toggle()">Cancel</span>
+        </span>        
+      </form>
+    </span>
+    <span class="map">
+      <img src="/assets/images/map.jpg" alt="" />
+    </span>
+  </aside>
+</section>

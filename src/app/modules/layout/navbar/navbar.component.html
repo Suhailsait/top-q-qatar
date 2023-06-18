@@ -1,0 +1,56 @@
+<header>
+    <span class="container">
+        <span class="logo">
+            <a href="">
+                <img src="/assets/images/logo.jpg" alt="">
+            </a>
+        </span>
+        <span class="menus">
+            <ul class="menu-list">
+                <li routerLinkActive="active">
+                    <a class="link" [routerLink]="['home']"
+                    href="javascipt:void(0)">HOME</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a class="link" [routerLink]="['gallery']"
+                    href="javascipt:void(0)">GALLERY</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a class="link" [routerLink]="['about-us']"
+                    href="javascipt:void(0)">ABOUT</a>
+                </li>
+                <li routerLinkActive="active">
+                    <a class="link" [routerLink]="['contact-us']"
+                    href="javascipt:void(0)">CONTACT</a>
+                </li>
+            </ul>
+        </span>
+        <mat-toolbar  class="menu-tool">
+            <button mat-icon-button (click)="toggleMenu()" class="toggle-button">
+                <span class="material-icons">
+                    menu
+                </span> </button>
+    
+            <div class="menu-items" [ngClass]="{ 'show': showMenu }">
+                <ul class="menu-list">
+                    <li routerLinkActive="active">
+                        <a class="link" [routerLink]="['home']"
+                        href="javascipt:void(0)" (click)="toggleMenu()">HOME</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a class="link" [routerLink]="['gallery']"
+                        href="javascipt:void(0)" (click)="toggleMenu()">GALLERY</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a class="link" [routerLink]="['about-us']"
+                        href="javascipt:void(0)" (click)="toggleMenu()">ABOUT</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a class="link" [routerLink]="['contact-us']"
+                        href="javascipt:void(0)" (click)="toggleMenu()">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </mat-toolbar>
+    </span>
+</header>
