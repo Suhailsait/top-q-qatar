@@ -33,9 +33,8 @@ export class HomeComponent implements OnInit {
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
-    dots: false,
+    dots: true,
     navSpeed: 700,
-    navText: ['', ''],
     center: true,
     autoplay:true,
     autoplayTimeout:2000,
@@ -54,7 +53,7 @@ export class HomeComponent implements OnInit {
         items: 1
       }
     },
-    nav: true
+    nav: false
   }
 
   

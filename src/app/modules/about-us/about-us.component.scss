@@ -49,3 +49,60 @@
         }
     }
 }
+
+.card-sec {
+    padding: 4rem 0;
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    align-items: center;
+
+    .cards-tit {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        .card {
+            border-radius: 4rem;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            background-color: rgba(0, 255, 255, 0.439);
+            @media only screen and (max-width: 426px){
+               flex-direction: column;
+               padding: 2rem 0;
+            }
+            img {
+                width: 35rem;
+                height: 35rem;
+                border-radius: 4rem;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+            .card-contents {
+                display: flex;
+                gap: 4rem;
+                flex-direction: column;
+                padding: 0 1rem;
+
+                .title {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+
+                .body {
+                    font-size: 1.5rem;
+                    max-width: 75rem;
+                }
+            }
+        }
+    }
+}
