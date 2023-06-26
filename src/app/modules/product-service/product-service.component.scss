@@ -1,28 +1,32 @@
 section {
-  .carousel {
-    .slide {
-      img {
-        object-fit: cover;
-        width: 100vw;
-        height: 90vh;
-        @media only screen and (max-width: 800px) {
-          height: 60vh;
+  @media only screen and (max-width:599px){
+    margin-top:8.8rem;
+}
+  .services {
+    height: 70vh;
+    background-image: url(/assets/images/furn-serv.jpg);
+    background-color: grey;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    .service{
+        font-size:4.5rem ;
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+        color:#fff;
+        @media only screen and (max-width: 800px){
+            font-size: 3.5rem;
+            font-weight: 500;
         }
-      }
     }
   }
   .our-services {
     margin: 5rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
     align-items: center;
-    .serv {
-      font-size: 3.5rem;
-      font-weight: 600;
-      color: rgb(41, 40, 40);
-
-    }
     .types {
       display: flex;
       justify-content: center;
@@ -44,9 +48,6 @@ section {
         -moz-transition: all 0.6s;
         -webkit-transition: all 0.6s;
         transition: all 0.6s;
-        @media only screen and (max-width: 405px) {
-          width: 100%;
-        }
         .title {
           font-size: 2.5rem;
         }
@@ -65,11 +66,5 @@ section {
         }
       }
     }
-  }
-}
-
-::ng-deep {
-  .owl-stage {
-    transition: 3s ease !important;
   }
 }

@@ -1,56 +1,105 @@
 <header>
-    <span class="container">
-        <span class="logo">
-            <a href="">
-                <img src="/assets/images/logo.jpg" alt="">
-            </a>
-        </span>
-        <span class="menus">
-            <ul class="menu-list">
-                <li routerLinkActive="active">
-                    <a class="link" [routerLink]="['home']"
-                    href="javascipt:void(0)">HOME</a>
-                </li>
-                <li routerLinkActive="active">
-                    <a class="link" [routerLink]="['gallery']"
-                    href="javascipt:void(0)">GALLERY</a>
-                </li>
-                <li routerLinkActive="active">
-                    <a class="link" [routerLink]="['about-us']"
-                    href="javascipt:void(0)">ABOUT</a>
-                </li>
-                <li routerLinkActive="active">
-                    <a class="link" [routerLink]="['contact-us']"
-                    href="javascipt:void(0)">CONTACT</a>
-                </li>
-            </ul>
-        </span>
-        <mat-toolbar  class="menu-tool">
-            <button mat-icon-button (click)="toggleMenu()" class="toggle-button">
-                <span class="material-icons">
-                    menu
-                </span> </button>
-    
-            <div class="menu-items" [ngClass]="{ 'show': showMenu }">
-                <ul class="menu-list">
-                    <li routerLinkActive="active">
-                        <a class="link" [routerLink]="['home']"
-                        href="javascipt:void(0)" (click)="toggleMenu()">HOME</a>
-                    </li>
-                    <li routerLinkActive="active">
-                        <a class="link" [routerLink]="['gallery']"
-                        href="javascipt:void(0)" (click)="toggleMenu()">GALLERY</a>
-                    </li>
-                    <li routerLinkActive="active">
-                        <a class="link" [routerLink]="['about-us']"
-                        href="javascipt:void(0)" (click)="toggleMenu()">ABOUT</a>
-                    </li>
-                    <li routerLinkActive="active">
-                        <a class="link" [routerLink]="['contact-us']"
-                        href="javascipt:void(0)" (click)="toggleMenu()">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </mat-toolbar>
+  <span class="container">
+    <span class="logo">
+      <a href="">
+        <img src="/assets/images/logo_full.png" alt="" />
+      </a>
     </span>
+    <span class="menus">
+      <ul class="menu-list">
+        <li routerLinkActive="active">
+          <a class="link" [routerLink]="['home']" href="javascipt:void(0)"
+            >HOME</a
+          >
+        </li>
+        <li routerLinkActive="active" class="services">
+          <a class="link" [routerLink]="['services']" href="javascipt:void(0)">
+            SERVICES
+          </a>
+          <span class="service-list">
+            <ul class="lists">
+              <li><a href="">Wooden Flooring</a></li>
+              <li><a href="">Furnishing</a></li>
+              <li><a href="">Outdoor Fabrics</a></li>
+              <li><a href="">Curtains</a></li>
+              <li><a href="">Blinds</a></li>
+              <li><a href="">Wallpapers</a></li>
+            </ul>
+          </span>
+        </li>
+        <li routerLinkActive="active">
+          <a class="link" [routerLink]="['about-us']" href="javascipt:void(0)"
+            >ABOUT</a
+          >
+        </li>
+        <li routerLinkActive="active">
+          <a class="link" [routerLink]="['contact-us']" href="javascipt:void(0)"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+    </span>
+    <mat-toolbar t-toolbar class="menu-tool">
+      <button mat-icon-button (click)="toggleMenu()" class="toggle-button">
+        <span class="material-icons close"> menu </span>
+      </button>
+
+      <div class="menu-items" [ngClass]="{ show: showMenu }">
+        <ul class="menu-list">
+          <li>
+            <span
+              class="material-icons close-btn"
+              mat-stroked-button
+              (click)="toggleMenu()"
+            >
+              close
+            </span>
+          </li>
+          <li routerLinkActive="active">
+            <a
+              class="link"
+              [routerLink]="['home']"
+              href="javascipt:void(0)"
+              (click)="toggleMenu()"
+              >HOME</a
+            >
+          </li>
+          <li class="services" (click)="showList()" [ngClass]="{ view: list }">
+            <span class="link"
+              >SERVICES
+              <span class="material-icons expand"> chevron_right </span></span
+            >
+            <span class="service-list">
+              <ul class="lists">
+                <li><a href="" (click)="toggleMenu()">Wooden Flooring</a></li>
+                <li><a href="" (click)="toggleMenu()">Furnishing</a></li>
+                <li><a href="" (click)="toggleMenu()">Outdoor Fabrics</a></li>
+                <li><a href="" (click)="toggleMenu()">Curtains</a></li>
+                <li><a href="" (click)="toggleMenu()">Blinds</a></li>
+                <li><a href="" (click)="toggleMenu()">Wallpapers</a></li>
+              </ul>
+            </span>
+          </li>
+          <li routerLinkActive="active">
+            <a
+              class="link"
+              [routerLink]="['about-us']"
+              href="javascipt:void(0)"
+              (click)="toggleMenu()"
+              >ABOUT</a
+            >
+          </li>
+          <li routerLinkActive="active">
+            <a
+              class="link"
+              [routerLink]="['contact-us']"
+              href="javascipt:void(0)"
+              (click)="toggleMenu()"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+    </mat-toolbar>
+  </span>
 </header>

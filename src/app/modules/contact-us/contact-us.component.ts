@@ -7,15 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
-  formToggle : boolean =false;
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  toggle(){
-    this.formToggle = !this.formToggle
-  }
+
 
 }

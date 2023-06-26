@@ -4,7 +4,6 @@ import { AboutUsComponent } from './modules/about-us/about-us.component';
 import { ContactUsComponent } from './modules/contact-us/contact-us.component';
 import { HomeComponent } from './modules/home/home.component';
 import { LayoutComponent } from './modules/layout/layout.component';
-import { GalleryComponent } from './modules/gallery/gallery.component';
 
 const routes: Routes = [
 {
@@ -20,16 +19,16 @@ const routes: Routes = [
       component:HomeComponent
     },
     {
-      path:'gallery',
-      component:GalleryComponent
-    },
-    {
       path:'about-us',
       component:AboutUsComponent
     },
     {
       path:'contact-us',
       component:ContactUsComponent
+    },
+    {
+      path:'services',
+      loadChildren: () => import('./modules/product-service/product-service.module').then(m => m.ProductServiceModule)
     },
   ]
 }
