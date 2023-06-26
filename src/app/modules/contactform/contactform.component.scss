@@ -1,0 +1,19 @@
+.connect{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 20;
+    span{
+        padding: 2rem;
+        background-color: #5c5c5c;
+        border-radius: 50%;
+        color: #FFF;
+        border: 0.2rem solid transparent;
+        &:hover{
+            color: #5c5c5c;
+            background-color: #FFF;
+            cursor: pointer;
+            border: 0.2rem solid #5c5c5c;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.footer1{
+    color: #aaaaaa;
+    background-color: #2a2a2a;
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 6rem 0 4rem;
+        display: flex;
+        justify-content: space-around;
+        @media only screen and (max-width: 920px){
+            justify-content:center;
+            gap: 2rem;
+            padding: 5rem 0 3rem;
+            flex-wrap: wrap;
+        }
+        @media only screen and (max-width: 591px){
+            justify-content: space-evenly;
+        }
+        @media only screen and (max-width: 466px){
+            padding: 3rem 0 2rem;
+            flex-direction: column;
+            width: 70%;
+        }
+        .company{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .logo{
+                img{
+                    width: 16rem;
+                }
+            }
+            .about{
+                font-size: 1.5rem;
+                width: 30rem;
+                @media only screen and (max-width: 800px){
+                    font-size: 1.4rem;
+                }
+                @media only screen and (max-width: 416px){
+                    width: 20rem;
+                }
+            }
+        }
+        .services,.links{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .title{
+                font-size: 1.6rem;
+                color: #FFF;
+                @media only screen and (max-width: 800px){
+                    font-size: 1.5rem;
+                }
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                font-size: 1.3rem;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: #aaaaaa;
+                    }
+                }
+            }
+        }
+        .connect{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            .title{
+                font-size: 1.6rem;
+                color: #FFF;
+            }
+            .contact{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .social{
+                    display: flex;
+                    gap: 2rem;
+                    li{
+                        a{
+                            img{
+                                width:2.5rem;
+                            }
+                        }
+                    }
+                }
+                .communications{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    .num,.email{
+                        display: flex;
+                        gap: 1rem;
+                        align-items: center ;
+                        .content{
+                            font-size: 1.3rem;
+                            a{
+                                color: #aaaaaa;
+                            }
+                        }
+
+                    }
+                    .num{
+                        .content{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.footer2{
+    background-color: #222;
+    color: #aaaaaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    .copy{
+        font-size: 1.5rem;
+    }
+}

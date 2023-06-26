@@ -1,4 +1,3 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
@@ -6,39 +5,21 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  animations: [
-    trigger('activeSlide', [
-      state('active', style({
-        opacity: 1,
-        transform: 'scale(1)'
-      })),
-      state('inActive', style({
-        opacity: 0.9,
-        transform: 'scale(0.9)'
-      })),
-      transition('active => inActive', [
-        animate('0.5s')
-      ]),
-      transition('inActive => active', [
-        animate('0.5s')
-      ])
-    ])
-  ]
+
 })
 export class HomeComponent implements OnInit {
 
 
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
+    mouseDrag: true,
     touchDrag: false,
     pullDrag: false,
-    dots: true,
+    dots: false,
     navSpeed: 700,
     center: true,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
+    autoplay: true,
+    autoplayTimeout: 3000,
     responsive: {
       0: {
         items: 1
@@ -56,7 +37,7 @@ export class HomeComponent implements OnInit {
     nav: false
   }
 
-  
+
 
 
   constructor() { }

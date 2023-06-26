@@ -9,16 +9,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './modules/home/home.component';
 import { LayoutModule } from './modules/layout/layout.module';
 import { AboutUsComponent } from './modules/about-us/about-us.component';
-import { GalleryComponent } from './modules/gallery/gallery.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ContactUsModule } from './modules/contact-us/contact-us.module';
+import { ProductServiceModule } from './modules/product-service/product-service.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutUsComponent,
-    GalleryComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +26,9 @@ import { ContactUsModule } from './modules/contact-us/contact-us.module';
     RouterModule,
     BrowserAnimationsModule,
     CarouselModule,
-    ContactUsModule
+    ContactUsModule,
+    RouterModule,
+    ProductServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,9 +2,8 @@
   <span class="c-title">
     <span class="title"> Contact Us </span>
   </span>
-  <span class="locate">OUR LOCATION</span>
   <aside class="contact">
-    <span class="details" *ngIf="!formToggle">
+    <span class="details">
       <span class="see-in">
         <span class="title">See Us In Person</span>
         <span class="contents">
@@ -14,42 +13,42 @@
         </span>
       </span>
       <span class="our-loc">
-        <span class="title">Our Location</span>
         <span class="contents">
-          Al MIRQAB Street 840,Zone 39,Building No 53 DOHA QATAR
+          <span class="material-icons icons"> home </span>
+          <span class="address"
+            >Al MIRQAB Street 840,Zone 39,Building No 53 DOHA QATAR</span
+          >
         </span>
-        <span class="num"> (+974) 506-341-11 / 666-887-39 </span>
-        <span class="email"> Email : info@topqatar.com </span>
+        <span class="num">
+          <span class="material-icons icons"> call </span>
+          <span class="nums">
+            <a href="tel:+97450634111">+974 506-341-11</a>
+            <a href="tel:+97466688739">+974 666-887-39</a>
+          </span>
+        </span>
+        <span class="email"
+          ><span class="material-icons icons"> email </span>
+          <span class="mail-add">
+            <a href="mailto:info@topqatar.com">info@topqatar.com</a>
+          </span>
+        </span>
       </span>
-      <span class="btn">
+      <!-- <span class="btn">
         <button class="drop-btn" (click)="toggle()">Connect Us</button>
-      </span>
+      </span> -->
     </span>
-    <span class="contact-form" *ngIf="formToggle">
-      <form>
-        <span class="contact-title"> Connect with us </span>
-        <mat-form-field appearance="outline">
-          <mat-label>Name</mat-label>
-          <input matInput placeholder="Name" />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline">
-          <mat-label>Email</mat-label>
-          <input matInput placeholder="Email" />
-        </mat-form-field>
-
-        <mat-form-field appearance="outline">
-          <mat-label>Leave a comment</mat-label>
-          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-        </mat-form-field>
-        <span class="btns">
-            <button class="submit-btn">Submit</button>
-            <span class="cancel-btn" (click)="toggle()">Cancel</span>
-        </span>        
-      </form>
-    </span>
-    <span class="map">
-      <img src="/assets/images/map.jpg" alt="" />
-    </span>
+  </aside>
+  <aside class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.899017542576!2d51.50297027509334!3d25.273982228586874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45dab796dc6a03%3A0x3ed41c30b8c73309!2s840%20Al%20Mirqab%20Al%20Jadeed%20St%2C%20Doha%2C%20Qatar!5e0!3m2!1sen!2sus!4v1687604216235!5m2!1sen!2sus"
+      width="90%"
+      height="400px"
+      style="border: 0"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      data-aos="fade-left"
+      data-aos-duration="3000"
+    ></iframe>
   </aside>
 </section>
