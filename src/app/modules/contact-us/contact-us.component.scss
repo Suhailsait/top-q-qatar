@@ -1,127 +1,122 @@
-section{
-    .c-title{
-        height: 70vh;
-        background-image:url(/assets/images/bgcs.jpg);
-        background-color: rgb(176, 175, 175);
-        background-blend-mode: multiply;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .title{
-            letter-spacing: 0.3rem;
-            font-size: 4.5rem;
-            font-weight: 600;
-            color: #FFF;
-            @media only screen and (max-width: 800px){
-                font-size: 3.5rem;
-                font-weight: 500;
-            }
-        }
+section {
+  .c-title {
+    height: 70vh;
+    background-image: url(/assets/images/bgcs.jpg);
+    background-color: rgb(176, 175, 175);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .title {
+      letter-spacing: 0.3rem;
+      font-size: 4.5rem;
+      font-weight: 600;
+      color: #fff;
+      @media only screen and (max-width: 800px) {
+        font-size: 3.5rem;
+        font-weight: 500;
+      }
     }
-   
-    .contact{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 4rem;
-        @media only screen and (max-width: 900px){
-            flex-direction: column;
-            align-items: center;
-            gap: 4rem;
-        }
-        .details{
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 6rem;
-            padding: 2rem;
-            @media only screen and (max-width: 955px){
-                justify-content: center;
-                gap: 2rem;
-            }
-            .see-in{
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                border-right: 0.1rem solid #c1c1c1;
-                padding: 10rem 5rem 10rem 0;
-                @media only screen and (max-width: 912px){
-                    border: none;
-                    padding: 2rem;
-                }
-                .title{
-                    font-size: 2.8rem;
-                    font-weight: 600;
-                    @media only screen and (max-width: 800px){
-                        font-size: 2rem;
-                    }
-                }
-                .contents{
-                    font-size: 2rem;
-                    max-width: 35rem;
-                    line-height: 2.5rem;
-                    color: rgb(94, 94, 94);
-                    @media only screen and (max-width: 800px){
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-            .our-loc{
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                background-color: #d6d5d5;
-                padding: 2.5rem;
-                border-radius: 2rem;
-                .contents,.num,.email{
-                    font-size: 1.4rem;
-                    display: flex;
-                    gap: 1rem;
-                    align-items: center;
-                    .icons{
-                        font-weight: 600;
-                        font-size: 2rem;
-                    }
-                }
-                .num{
-                    .nums{
-                        display: flex;
-                        flex-direction: column;
-                        a{
-                            color: #000;
-                        }
-                    }
-                }
-                .email{
-                    .mail-add{
-                        a{
-                            color: #000;
-                    }
-                    }
-                }
-            }
-            .btn{
-                .drop-btn{
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    padding: 1.5rem 3.5rem;
-                    border-radius: 2.5rem;
-                    border: none;
-                    background-color: rgb(194, 194, 194);
-                    @media only screen and (max-width: 800px){
-                        font-size: 1.3rem;
-                    }
-                    &:hover{
-                        background-color: rgb(156, 155, 155);
-                    }
-                }
-            }
-        }
-    }
-    .map{
-        text-align: center;
-        margin-bottom: 5rem;
-    }
-}
+  }
 
+  .contact {
+    margin: 5rem 0;
+    .container {
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+      .details {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 6rem;
+        .see-in {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 2rem;
+          @media only screen and (max-width: 912px) {
+            border: none;
+            padding: 2rem;
+          }
+          .title {
+            font-size: 2.8rem;
+            @media only screen and (max-width: 800px) {
+              font-size: 2rem;
+            }
+          }
+          .contents {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: rgb(94, 94, 94);
+            text-align: center;
+            @media only screen and (max-width: 800px) {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .our-loc {
+          display: flex;
+          gap: 10rem;
+          padding: 2rem 0;
+          @media only screen and (max-width:1126px){
+            gap: 5rem;
+        }
+        @media only screen and (max-width:833px){
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+          .contents,
+          .num,
+          .email {
+            font-size: 1.4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            .icons {
+              font-weight: 600;
+              font-size: 2rem;
+            }
+            .heading{
+                font-size: 1.7rem;
+            }
+            .address{
+                text-align: center;
+            }
+            a {
+                color: rgba(0, 0, 0, 0.607);
+                &:hover{
+                    color:rgb(54, 38, 38);
+                }
+              }
+          }
+          .contents,.num{
+            padding-right: 10rem;
+            border-right: 0.1rem solid #c1c1c1;
+            @media only screen and (max-width:1126px){
+                padding-right: 5rem;
+            }
+            @media only screen and (max-width:833px){
+                padding-right: 2rem;
+                border: none;
+            }
+          }
+          .num {
+            .nums {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+  .map {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}

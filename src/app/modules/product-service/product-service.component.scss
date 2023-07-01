@@ -26,7 +26,17 @@ section {
   }
   .our-services {
     margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 2rem;
+    .service-content{
+      display: flex;
+      font-size: 1.8rem;
+      width: 85%;
+      text-align: center;
+      color: #3e3f3f;
+    }
     .types {
       display: flex;
       justify-content: center;
@@ -52,14 +62,17 @@ section {
           font-size: 2.5rem;
         }
         .explore {
-          font-size: 1.6rem;
-          border: 0.1rem solid #fff;
-          width: 15rem;
-          height: 3rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
+          a{
+            font-size: 1.6rem;
+            border: 0.1rem solid #fff;
+            width: 15rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+          }
         }
         &:hover {
           background-size: 130% 130%;

@@ -1,4 +1,9 @@
 header {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: background-color 0.2s;
   .container {
     margin: 0 auto;
     width: 80%;
@@ -35,6 +40,7 @@ header {
           &.active {
             .link {
               opacity: 1;
+              color: #cda274;
             }
           }
           &:hover {
@@ -86,6 +92,11 @@ header {
       @media only screen and (max-width: 1000px) {
         display: flex;
       }
+      .toggle-button{
+        .close{
+          color: #FFF;
+        }
+      }
       .menu-items {
         display: none;
         position: absolute;
@@ -115,7 +126,7 @@ header {
           li {
             .close-btn {
               cursor: pointer;
-              &:hover{
+              &:hover {
                 transform: rotateZ(90deg);
                 transition: 0.3s ease;
               }
@@ -135,40 +146,38 @@ header {
               }
             }
           }
-          .services{
-            .link{
+          .services {
+            .link {
               display: flex;
               align-items: center;
               gap: 1rem;
-              .expand{
-                font-size:1.5em;
+              .expand {
+                font-size: 1.5em;
               }
             }
-            .service-list{
+            .service-list {
               display: none;
               padding-right: 3rem;
-              .lists{
-                background-color: #FFF;
+              .lists {
+                background-color: #fff;
                 padding: 1rem 2rem 1rem 1rem;
-                li{
-                  a{
+                li {
+                  a {
                     color: rgb(94, 94, 94);
                   }
                 }
-
               }
             }
-
           }
-          .services.view{
-            .link{
+          .services.view {
+            .link {
               color: #cda274;
-              .expand{
+              .expand {
                 transform: rotateZ(90deg);
                 transition: 0.3s ease;
               }
             }
-            .service-list{
+            .service-list {
               display: block;
               transition: 1s ease;
             }
@@ -177,4 +186,7 @@ header {
       }
     }
   }
+}
+.fixed{
+  background-color: rgba(0, 0, 0, 0.9);
 }
