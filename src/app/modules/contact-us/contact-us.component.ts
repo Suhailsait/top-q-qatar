@@ -7,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
-
-
   constructor() { }
 
   ngOnInit(): void {
+   
   }
 
 

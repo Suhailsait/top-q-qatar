@@ -1,4 +1,4 @@
-<header>
+<header [ngClass]="{'fixed':isScrolled}">
   <span class="container">
     <span class="logo">
       <a href="">
@@ -18,12 +18,12 @@
           </a>
           <span class="service-list">
             <ul class="lists">
-              <li><a href="">Wooden Flooring</a></li>
-              <li><a href="">Furnishing</a></li>
-              <li><a href="">Outdoor Fabrics</a></li>
-              <li><a href="">Curtains</a></li>
-              <li><a href="">Blinds</a></li>
-              <li><a href="">Wallpapers</a></li>
+              <li><a href="services/curtains">Curtains</a></li>
+              <li><a href="services/furnishing">Furnishing</a></li>
+              <li><a href="services/outdoor-fabric">Outdoor Fabrics</a></li>
+              <li><a href="services/wooden-flooring">Wooden Flooring</a></li>
+              <li><a href="services/blinds">Blinds</a></li>
+              <li><a href="services/wallpapers">Wallpapers</a></li>
             </ul>
           </span>
         </li>
@@ -71,12 +71,34 @@
             >
             <span class="service-list">
               <ul class="lists">
-                <li><a href="" (click)="toggleMenu()">Wooden Flooring</a></li>
-                <li><a href="" (click)="toggleMenu()">Furnishing</a></li>
-                <li><a href="" (click)="toggleMenu()">Outdoor Fabrics</a></li>
-                <li><a href="" (click)="toggleMenu()">Curtains</a></li>
-                <li><a href="" (click)="toggleMenu()">Blinds</a></li>
-                <li><a href="" (click)="toggleMenu()">Wallpapers</a></li>
+                <li>
+                  <a href="services/curtains" (click)="toggleMenu()"
+                    >Curtains</a
+                  >
+                </li>
+                <li>
+                  <a href="services/furnishing" (click)="toggleMenu()"
+                    >Furnishing</a
+                  >
+                </li>
+                <li>
+                  <a href="services/outdoor-fabric" (click)="toggleMenu()"
+                    >Outdoor Fabrics</a
+                  >
+                </li>
+                <li>
+                  <a href="services/wooden-flooring" (click)="toggleMenu()"
+                    >Wooden Flooring</a
+                  >
+                </li>
+                <li>
+                  <a href="services/blinds" (click)="toggleMenu()">Blinds</a>
+                </li>
+                <li>
+                  <a href="services/wallpapers" (click)="toggleMenu()"
+                    >Wallpapers</a
+                  >
+                </li>
               </ul>
             </span>
           </li>

@@ -5,7 +5,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormComponent } from './form/form.component';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     CommonModule,
     MatInputModule,
     MatFormFieldModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   exports:[ContactformComponent]
 })
