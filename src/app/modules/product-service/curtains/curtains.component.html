@@ -12,12 +12,30 @@
         that offer privacy, control light, and elevate the overall ambiance of
         your space.
       </span>
-      <span class="imgs">
-        <img src="/assets/images/curtain3.jpg" alt="" />
-        <img src="/assets/images/curtain1.jpg" alt="" />
-        <img src="/assets/images/curtain2.jpg" alt="" />
-        <img src="/assets/images/curtain4.jpg" alt="" />
-      </span>
+        <img
+          #image1
+          (click)="viewImage(image1.src)"
+          src="/assets/images/curtain3.jpg"
+          alt=""
+        />
+        <img
+          #image2
+          (click)="viewImage(image2.src)"
+          src="/assets/images/curtain1.jpg"
+          alt=""
+        />
+        <img
+          #image3
+          (click)="viewImage(image3.src)"
+          src="/assets/images/curtain2.jpg"
+          alt=""
+        />
+        <img
+          #image4
+          (click)="viewImage(image4.src)"
+          src="/assets/images/curtain4.jpg"
+          alt=""
+        />
     </span>
   </aside>
 </section>

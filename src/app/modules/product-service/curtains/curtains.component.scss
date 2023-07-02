@@ -19,27 +19,33 @@
         margin: 5rem 0;
         .container{
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             align-items: center;
-            gap: 2rem;
+            justify-content: center;
+            gap: 5rem;
             width: 90%;
             margin: 0 auto;
             .contents{
                 font-size: 1.8rem;
-                font-weight: 300;
-                text-align: center;
-                width: 50%;
-            }
-            .imgs{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 5rem;
-                img{
-                    width: 32rem;
-                    height: 25rem;
+                font-weight: 400;
+                width:50rem;
+                @media only screen and (max-width:400px) {
+                    width: 100%;
                 }
             }
+                
+                img{
+                    width: 40rem;
+                    height: 25rem;
+                    cursor:zoom-in;
+                    transition: all 0.3s;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                    @media only screen and (max-width: 400px) {
+                        width: 100%;
+                    }
+                }
         }
     }
 }

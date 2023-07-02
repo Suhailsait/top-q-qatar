@@ -12,12 +12,10 @@
         precise installation, delivering a seamless finish that enhances the
         overall aesthetic of your space.
       </span>
-      <span class="imgs">
-        <img src="/assets/images/wall1.jpg" alt="" />
-        <img src="/assets/images/wall2.jpg" alt="" />
-        <img src="/assets/images/wall3.jpg" alt="" />
-        <img src="/assets/images/wall4.jpg" alt="" />
-      </span>
+        <img #image1 (click)="viewImage(image1.src)" src="/assets/images/wall1.jpg" alt="" />
+        <img #image2 (click)="viewImage(image2.src)" src="/assets/images/wall2.jpg" alt="" />
+        <img #image3 (click)="viewImage(image3.src)" src="/assets/images/wall3.jpg" alt="" />
+        <img #image4 (click)="viewImage(image4.src)" src="/assets/images/wall4.jpg" alt="" />
     </span>
   </aside>
 </section>
