@@ -41,6 +41,9 @@
                     transition: all 0.3s;
                     &:hover{
                         transform: scale(1.2);
+                        @media only screen and (max-width: 426px) {
+                                transform:none;
+                        }
                     }
                     @media only screen and (max-width: 400px) {
                         width: 100%;
