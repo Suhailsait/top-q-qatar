@@ -9,6 +9,8 @@ import { OutdoorfabricsComponent } from './outdoorfabrics/outdoorfabrics.compone
 import { FlooringComponent } from './flooring/flooring.component';
 import { BlindsComponent } from './blinds/blinds.component';
 import { WallpapersComponent } from './wallpapers/wallpapers.component';
+import { ImageViewComponent } from './image-view/image-view.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -19,11 +21,13 @@ import { WallpapersComponent } from './wallpapers/wallpapers.component';
     OutdoorfabricsComponent,
     FlooringComponent,
     BlindsComponent,
-    WallpapersComponent
+    WallpapersComponent,
+    ImageViewComponent
   ],
   imports: [
     CommonModule,
-    ProductServiceRoutingModule
+    ProductServiceRoutingModule,
+    MatDialogModule
   ]
 })
 export class ProductServiceModule { }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ImageViewComponent } from '../image-view/image-view.component';
 
 @Component({
   selector: 'app-curtains',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurtainsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  viewImage(event:any){
+    const dialogRef = this.dialog.open(ImageViewComponent, {
+      data: {event},
+      width:'100%',
+      height:'90%'
+    });
+    
   }
 
 }

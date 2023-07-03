@@ -11,12 +11,10 @@
         skilled installers will ensure a flawless and long-lasting installation
         that adds value and elegance to your home.
       </span>
-      <span class="imgs">
-        <img src="/assets/images/floor1.jpg" alt="" />
-        <img src="/assets/images/floor2.jpg" alt="" />
-        <img src="/assets/images/floor3.jpg" alt="" />
-        <img src="/assets/images/floor4.jpg" alt="" />
-      </span>
+        <img #image1 (click)="viewImage(image1.src)" src="/assets/images/floor1.jpg" alt="" />
+        <img #image2 (click)="viewImage(image2.src)" src="/assets/images/floor2.jpg" alt="" />
+        <img #image3 (click)="viewImage(image3.src)" src="/assets/images/floor3.jpg" alt="" />
+        <img #image4 (click)="viewImage(image4.src)" src="/assets/images/floor4.jpg" alt="" />
     </span>
   </aside>
 </section>
