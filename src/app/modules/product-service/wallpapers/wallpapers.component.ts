@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import lgZoom from 'lightgallery/plugins/zoom';
 import { BeforeSlideDetail } from 'lightgallery/lg-events';
 
 @Component({
@@ -15,11 +14,12 @@ export class WallpapersComponent implements OnInit {
   }
 
 
-  
   settings = {
     counter: false,
-    plugins: [lgZoom],
-};
+    mobileSettings :{
+      controls: true, showCloseIcon: true, download: false,
+    }
+  };
 onBeforeSlide = (detail: BeforeSlideDetail): void => {
     const { index, prevIndex } = detail;
     console.log(index, prevIndex);

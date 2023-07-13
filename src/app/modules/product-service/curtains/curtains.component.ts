@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import lgZoom from 'lightgallery/plugins/zoom';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { BeforeSlideDetail } from 'lightgallery/lg-events';
 
 @Component({
   selector: 'app-curtains',
   templateUrl: './curtains.component.html',
-  styleUrls: ['./curtains.component.scss']
+  styleUrls: ['./curtains.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class CurtainsComponent implements OnInit {
 
@@ -16,12 +16,19 @@ export class CurtainsComponent implements OnInit {
 
   settings = {
     counter: false,
-    plugins: [lgZoom],
-};
-onBeforeSlide = (detail: BeforeSlideDetail): void => {
+    mobileSettings :{
+      controls: true, showCloseIcon: true, download: false,
+    }
+  };
+
+  onBeforeSlide = (detail: BeforeSlideDetail): void => {
     const { index, prevIndex } = detail;
     console.log(index, prevIndex);
-};
+  };
+
+  close() {
+
+  }
 
 
 }

@@ -34,34 +34,37 @@
                 font-weight: 400;
                 max-width: 80rem;
                 text-align: center;
+
                 @media only screen and (max-width:400px) {
                     width: 100%;
                 }
             }
 
-  
-                .gallery-contents {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    img{
-                        width: 35rem;
-                        height: 25rem;
-                        cursor:zoom-in;
-                        transition: all 0.3s;
-                        overflow: hidden;
-                        &:hover{
-                            transform: scale(1.05);
-                            @media only screen and (max-width: 426px) {
-                                    transform:none;
-                            }
-                        }
-                        @media only screen and (max-width: 400px) {
-                            width: 100%;
+
+            .gallery-contents {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                img {
+                    width: 35rem;
+                    height: 25rem;
+                    cursor: zoom-in;
+                    transition: all 0.3s;
+                    overflow: hidden;
+
+                    &:hover {
+                        transform: scale(1.05);
+
+                        @media only screen and (max-width: 426px) {
+                            transform: none;
                         }
                     }
-            
-                
+
+                    @media only screen and (max-width: 400px) {
+                        width: 100%;
+                    }
+                }
             }
 
         }
