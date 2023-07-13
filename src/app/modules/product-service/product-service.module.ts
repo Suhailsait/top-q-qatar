@@ -9,9 +9,8 @@ import { OutdoorfabricsComponent } from './outdoorfabrics/outdoorfabrics.compone
 import { FlooringComponent } from './flooring/flooring.component';
 import { BlindsComponent } from './blinds/blinds.component';
 import { WallpapersComponent } from './wallpapers/wallpapers.component';
-import { ImageViewComponent } from './image-view/image-view.component';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { LightgalleryModule } from 'lightgallery/angular';
 
 @NgModule({
   declarations: [
@@ -22,12 +21,12 @@ import { MatDialogModule } from '@angular/material/dialog';
     FlooringComponent,
     BlindsComponent,
     WallpapersComponent,
-    ImageViewComponent
   ],
   imports: [
     CommonModule,
     ProductServiceRoutingModule,
-    MatDialogModule
+    MatDialogModule,
+    LightgalleryModule
   ]
 })
 export class ProductServiceModule { }

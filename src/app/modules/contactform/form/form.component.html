@@ -6,12 +6,13 @@
     <span class="contact-title"> Connect with us </span>
     <mat-form-field appearance="outline">
       <mat-label>Name</mat-label>
-      <input matInput placeholder="Name" name="name" formControlName="name" />
+      <input type="text" matInput placeholder="Name" name="name" formControlName="name" />
     </mat-form-field>
 
     <mat-form-field appearance="outline">
       <mat-label>Phone Number</mat-label>
       <input
+      type="number"
         matInput
         placeholder="Phone Number"
         name="phone_num"
@@ -22,6 +23,7 @@
     <mat-form-field appearance="outline">
       <mat-label>Email</mat-label>
       <input
+      type="email"
         matInput
         placeholder="Email"
         name="email"

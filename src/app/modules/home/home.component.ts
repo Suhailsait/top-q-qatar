@@ -6,10 +6,8 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-
 })
 export class HomeComponent implements OnInit {
-
 
   customOptions: OwlOptions = {
     loop: true,
@@ -17,10 +15,12 @@ export class HomeComponent implements OnInit {
     touchDrag: false,
     pullDrag: false,
     dots: false,
-    navSpeed: 700,
     center: true,
     autoplay: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout:3000,
+    autoplaySpeed:2000,
+    autoplayHoverPause:false,
+    nav: false,
     responsive: {
       0: {
         items: 1
@@ -34,12 +34,8 @@ export class HomeComponent implements OnInit {
       940: {
         items: 1
       }
-    },
-    nav: false
+    }
   }
-
-
-
 
   constructor() { }
 

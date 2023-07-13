@@ -37,6 +37,8 @@ $topqqatar-theme: mat.define-light-theme((
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
+@import '~lightgallery/scss/lightgallery';
+@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-zoom.css');
 
 
 *{
@@ -48,7 +50,7 @@ $topqqatar-theme: mat.define-light-theme((
 
 body{
   font-family: 'Poppins', sans-serif;
-  background-color: #EFEEF1;
+  background-color: #fdfdff;
 }
 html{
     font-size: 10px;

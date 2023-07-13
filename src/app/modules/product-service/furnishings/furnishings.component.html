@@ -13,10 +13,12 @@
         harmonize with your existing decor and meet your functional
         requirements.
       </span>
-        <img #image1 (click)="viewImage(image1.src)" src="/assets/images/furn1.jpg" alt="" />
-        <img #image2 (click)="viewImage(image2.src)" src="/assets/images/furn2.jpg" alt="" />
-        <img #image3 (click)="viewImage(image3.src)" src="/assets/images/furn3.jpg" alt="" />
-        <img #image4 (click)="viewImage(image4.src)" src="/assets/images/furn4.jpg" alt="" />
+      <lightgallery [settings]="settings" class="gallery-contents">
+        <img src="/assets/images/furn1.jpg" alt="" />
+        <img src="/assets/images/furn2.jpg" alt="" />
+        <img src="/assets/images/furn3.jpg" alt="" />
+        <img src="/assets/images/furn4.jpg" alt="" />
+      </lightgallery>
     </span>
   </aside>
 </section>

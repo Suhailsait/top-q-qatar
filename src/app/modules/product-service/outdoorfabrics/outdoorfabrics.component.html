@@ -12,10 +12,14 @@
         visual appeal. Let us help you create an outdoor oasis that combines
         comfort, style, and durability.
       </span>
-        <img #image1 (click)="viewImage(image1.src)" src="/assets/images/outdoor1.jpg" alt="" />
-        <img #image2 (click)="viewImage(image2.src)" src="/assets/images/outdoor2.jpg" alt="" />
-        <img #image3 (click)="viewImage(image3.src)" src="/assets/images/outdoor3.jpg" alt="" />
-        <img #image4 (click)="viewImage(image4.src)" src="/assets/images/outdoor4.jpg" alt="" />
+      <lightgallery [settings]="settings" class="gallery-contents">
+
+        <img src="/assets/images/outdoor1.jpg" alt="" />
+        <img src="/assets/images/outdoor2.jpg" alt="" />
+        <img src="/assets/images/outdoor3.jpg" alt="" />
+        <img src="/assets/images/outdoor4.jpg" alt="" />
+      </lightgallery>
+
     </span>
   </aside>
 </section>

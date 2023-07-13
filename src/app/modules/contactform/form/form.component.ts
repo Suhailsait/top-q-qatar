@@ -42,12 +42,13 @@ export class FormComponent implements OnInit {
                 email : ${value.email}
                 message : ${value.content}`
     };
-
     if (this.form.valid) {
-      emailjs.send('service_0pos3sb', 'template_xrp8v71', templateParams, 'VfiagQscG9ygEc6lc')
+      emailjs.send('service_7666syn', 'template_2grlw5q', templateParams, '--c8GTeosZSqagG7j')
         .then((result) => {
           if (result.text == "OK") {
-            this.snackBar.open(' Submitted Contact You Soon',"close",{duration:3000})
+            this.snackBar.open(' Submitted Contact You Soon',"close",{duration:3000})   
+            console.log(result);
+                     
           }
         }, (error) => {
           console.log(error);

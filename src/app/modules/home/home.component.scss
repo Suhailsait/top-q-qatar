@@ -11,6 +11,57 @@ section {
       }
     }
   }
+  .why-us {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 5rem;
+    .title {
+      font-size: 3.3rem;
+      letter-spacing: 0.1rem;
+      @media only screen and (max-width: 426px) {
+          font-size: 2.5rem;
+      }
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        .icon {
+          background-color: #8f8f8f;
+          color: #fff;
+          width: 4rem;
+          height: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 20%;
+        }
+        .c-title {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+        .content {
+          max-width: 50rem;
+          font-size: 1.2rem;
+        }
+        &:hover {
+          background-color: #fff;
+          transition: transform 1.5s ease;
+        }
+      }
+    }
+  }
   .our-services {
     margin: 5rem 0;
     display: flex;
@@ -69,9 +120,3 @@ section {
     }
   }
 }
-
-// ::ng-deep {
-//   .owl-stage {
-//     transition: 3s ease !important;
-//   }
-// }
