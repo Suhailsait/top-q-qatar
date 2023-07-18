@@ -71,7 +71,6 @@ section {
     .serv {
       font-size: 3.5rem;
       color: rgb(41, 40, 40);
-
     }
     .types {
       display: flex;
@@ -132,11 +131,16 @@ section {
         &.wall{
           background-image: url('~src/assets/images/wallpaper.jpg');    
             }
+        &.upholstery{
+          background-image: url('~src/assets/images/upholstery.jpg');    
+            }
+        &.wallpanel{
+          background-image: url('~src/assets/images/wallpanel.jpg');    
+            }
         &:hover {
           background-size: 150% 150%;
         }
       }
-
     }
   }
 }

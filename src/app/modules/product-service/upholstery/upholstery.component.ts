@@ -12,4 +12,12 @@ export class UpholsteryComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  settings = {
+    counter: false,
+    mobileSettings :{
+      controls: true, showCloseIcon: true, download: false,
+    }
+  };
+
 }
