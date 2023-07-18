@@ -11,6 +11,8 @@ import { BlindsComponent } from './blinds/blinds.component';
 import { WallpapersComponent } from './wallpapers/wallpapers.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { LightgalleryModule } from 'lightgallery/angular';
+import { UpholsteryComponent } from './upholstery/upholstery.component';
+import { WallpanelComponent } from './wallpanel/wallpanel.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { LightgalleryModule } from 'lightgallery/angular';
     FlooringComponent,
     BlindsComponent,
     WallpapersComponent,
+    UpholsteryComponent,
+    WallpanelComponent,
   ],
   imports: [
     CommonModule,
