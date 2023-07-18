@@ -7,6 +7,8 @@ import { FurnishingsComponent } from './furnishings/furnishings.component';
 import { OutdoorfabricsComponent } from './outdoorfabrics/outdoorfabrics.component';
 import { ProductServiceComponent } from './product-service.component';
 import { WallpapersComponent } from './wallpapers/wallpapers.component';
+import { UpholsteryComponent } from './upholstery/upholstery.component';
+import { WallpanelComponent } from './wallpanel/wallpanel.component';
 
 const routes: Routes = [
   {path:'',component:ProductServiceComponent},
@@ -16,7 +18,8 @@ const routes: Routes = [
   {path:'wooden-flooring',component:FlooringComponent},
   {path:'furnishing',component:FurnishingsComponent},
   {path:'wallpapers',component:WallpapersComponent},
-  
+  {path:'upholstery',component:UpholsteryComponent},
+  {path:'wallpanelling',component:WallpanelComponent},
 ];
 
 @NgModule({
