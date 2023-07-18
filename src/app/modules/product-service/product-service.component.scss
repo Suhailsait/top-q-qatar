@@ -1,7 +1,8 @@
 section {
-  @media only screen and (max-width:599px){
-    margin-top:8.8rem;
-}
+  @media only screen and (max-width:599px) {
+    margin-top: 8.8rem;
+  }
+
   .services {
     height: 70vh;
     background: url("~src/assets/images/furn-serv.jpg");
@@ -13,35 +14,41 @@ section {
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
-    .service{
-        font-size:4.5rem ;
-        font-weight: 600;
-        letter-spacing: 0.3rem;
-        color:#fff;
-        @media only screen and (max-width: 800px){
-            font-size: 3.5rem;
-            font-weight: 500;
-        }
+
+    .service {
+      font-size: 4.5rem;
+      font-weight: 600;
+      letter-spacing: 0.3rem;
+      color: #fff;
+
+      @media only screen and (max-width: 800px) {
+        font-size: 3.5rem;
+        font-weight: 500;
+      }
     }
   }
+
   .our-services {
     margin: 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    .service-content{
+
+    .service-content {
       display: flex;
       font-size: 1.8rem;
       width: 85%;
       text-align: center;
       color: #3e3f3f;
     }
+
     .types {
       display: flex;
       justify-content: center;
       gap: 3rem;
       flex-wrap: wrap;
+
       .card {
         display: flex;
         justify-content: center;
@@ -59,14 +66,17 @@ section {
         -moz-transition: all 0.6s;
         -webkit-transition: all 0.6s;
         transition: all 0.6s;
+
         @media only screen and (max-width: 405px) {
           width: 100%;
         }
+
         .title {
           font-size: 2.5rem;
         }
+
         .explore {
-          a{
+          a {
             font-size: 1.6rem;
             border: 0.1rem solid #fff;
             width: 15rem;
@@ -78,24 +88,39 @@ section {
             text-decoration: none;
           }
         }
-        &.curtain{
+
+        &.curtain {
           background-image: url('~src/assets/images/curtain.jpg');
         }
-        &.furnishing{
-          background-image: url('~src/assets/images/furnishing.jpg')    
-            }
-        &.outdoor{
-          background-image: url('~src/assets/images/outdoor.jpg')    
-            }
-        &.floor{
-          background-image: url('~src/assets/images/floor.jpg')    
-            }
-        &.blind{
-          background-image: url('~src/assets/images/blinds.jpg')    
-            }
-        &.wall{
-          background-image: url('~src/assets/images/wallpaper.jpg')    
-            }
+
+        &.furnishing {
+          background-image: url('~src/assets/images/furnishing.jpg')
+        }
+
+        &.outdoor {
+          background-image: url('~src/assets/images/outdoor.jpg')
+        }
+
+        &.floor {
+          background-image: url('~src/assets/images/floor.jpg')
+        }
+
+        &.blind {
+          background-image: url('~src/assets/images/blinds.jpg')
+        }
+
+        &.wall {
+          background-image: url('~src/assets/images/wallpaper.jpg')
+        }
+
+        &.upholstery {
+          background-image: url('~src/assets/images/upholstery.jpg');
+        }
+
+        &.wallpanel {
+          background-image: url('~src/assets/images/wallpanel.jpg');
+        }
+
         &:hover {
           background-size: 150% 150%;
         }

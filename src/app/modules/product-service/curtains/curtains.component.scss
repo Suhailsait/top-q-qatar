@@ -5,21 +5,19 @@
         background-blend-mode: multiply;
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
-
         .content {
             color: #FFF;
             font-size: 2.5rem;
             letter-spacing: 0.2rem;
         }
     }
-
     .body {
         margin: 5rem 0;
-
         .container {
             display: flex;
             flex-direction: column;
@@ -39,8 +37,6 @@
                     width: 100%;
                 }
             }
-
-
             .gallery-contents {
                 display: flex;
                 flex-wrap: wrap;
@@ -52,21 +48,17 @@
                     cursor: zoom-in;
                     transition: all 0.3s;
                     overflow: hidden;
-
                     &:hover {
                         transform: scale(1.05);
-
                         @media only screen and (max-width: 426px) {
                             transform: none;
                         }
                     }
-
                     @media only screen and (max-width: 400px) {
                         width: 100%;
                     }
                 }
             }
-
         }
     }
 }

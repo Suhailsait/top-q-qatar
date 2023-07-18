@@ -12,4 +12,12 @@ export class WallpanelComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  settings = {
+    counter: false,
+    mobileSettings :{
+      controls: true, showCloseIcon: true, download: false,
+    }
+  };
+
 }
