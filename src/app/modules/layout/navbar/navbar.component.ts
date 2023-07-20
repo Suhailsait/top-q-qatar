@@ -1,4 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ServService } from '../../product-service/service/serv.service';
 
 
 @Component({
@@ -9,12 +11,12 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   @HostListener('window:scroll')
-  showMenu:any = false;
-  list:any = false
+  showMenu: any = false;
+  list: any = false
 
   isScrolled = false;
 
-  constructor() { }
+  constructor(private router: Router,private ds :ServService) { }
 
   @HostListener("window:scroll")
   scrollEvent() {
@@ -22,15 +24,19 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+
   }
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
   }
-  showList(){
+  showList() {
     this.list = !this.list
   }
-  
+  viewIndex(num:any) {
+    this.router.navigate(['services/curtains'])
+    this.ds.setValue(num);
+  }
+
 
 }

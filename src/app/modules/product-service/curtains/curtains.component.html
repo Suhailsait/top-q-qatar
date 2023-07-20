@@ -12,39 +12,81 @@
         that offer privacy, control light, and elevate the overall ambiance of
         your space.
       </span>
-      <lightgallery [settings]="settings" class="gallery-contents" >
-        <img
-        src="assets/images/curtain1.jpg"
-        alt=""
-      />
-      <img
-        src="assets/images/curtain2.jpg"
-        alt=""
-      />
-      <img
-        src="assets/images/curtain3.jpg"
-        alt=""
-      />
-      <img
-        src="assets/images/curtain4.jpg"
-        alt=""
-      />
-      <img
-        src="assets/images/curtain5.jpg"
-        alt=""
-      />
-      <img
-        src="assets/images/curtain6.jpg"
-        alt=""
-      />
-      <img
-        src="assets/images/curtain7.jpg"
-        alt=""
-      />
-      <img
-        src="assets/images/curtain8.jpg"
-        alt=""
-      />
+      <span class="types">
+        <span class="curtain electric" [ngClass]="{ active: electric == true }"
+        (click)="change(1)"
+          >Electric Curtain</span
+        >
+        <span class="curtain drapery" [ngClass]="{ active: drapery == true }"
+        (click)="change(2)"
+          >Wave Drapery</span
+        >
+        <span class="curtain ring" [ngClass]="{ active: ring == true }"
+        (click)="change(3)"
+          >Ring Top<br />
+          Curtain</span
+        >
+        <span class="curtain pleat" [ngClass]="{ active: pleat == true }"
+        (click)="change(4)"
+          >Wave Pleat<br />
+          Curtain</span
+        >
+        <span class="curtain abstract" [ngClass]="{ active: abstract == true }"
+        (click)="change(5)"
+          >Abstract Shower<br />
+          Curtain</span
+        >
+      </span>
+
+      <lightgallery [settings]="settings" class="gallery-contents" *ngIf="electric">
+        <img src="assets/images/electric1.jpg" alt="" />
+        <img src="assets/images/electric2.jpg" alt="" />
+        <img src="assets/images/electric3.jpg" alt="" />
+        <img src="assets/images/electric4.jpg" alt="" />
+        <img src="assets/images/electric5.jpg" alt="" />
+        <img src="assets/images/electric6.jpg" alt="" />
+        <img src="assets/images/electric7.jpg" alt="" />
+        <img src="assets/images/electric8.jpg" alt="" />
+      </lightgallery>
+      <lightgallery [settings]="settings" class="gallery-contents" *ngIf="drapery">
+        <img src="assets/images/drapery1.jpg" alt="" />
+        <img src="assets/images/drapery2.jpg" alt="" />
+        <img src="assets/images/drapery3.jpg" alt="" />
+        <img src="assets/images/drapery4.jpg" alt="" />
+        <img src="assets/images/drapery5.jpg" alt="" />
+        <img src="assets/images/drapery6.jpg" alt="" />
+        <img src="assets/images/drapery7.jpg" alt="" />
+        <img src="assets/images/drapery8.jpg" alt="" />
+      </lightgallery>
+      <lightgallery [settings]="settings" class="gallery-contents" *ngIf="ring">
+        <img src="assets/images/ring1.jpg" alt="" />
+        <img src="assets/images/ring2.jpg" alt="" />
+        <img src="assets/images/ring3.jpg" alt="" />
+        <img src="assets/images/ring4.jpg" alt="" />
+        <img src="assets/images/ring5.jpg" alt="" />
+        <img src="assets/images/ring6.jpg" alt="" />
+        <img src="assets/images/ring7.jpg" alt="" />
+        <img src="assets/images/ring8.jpg" alt="" />
+      </lightgallery>
+      <lightgallery [settings]="settings" class="gallery-contents" *ngIf="pleat">
+        <img src="assets/images/pleat1.jpg" alt="" />
+        <img src="assets/images/pleat2.jpg" alt="" />
+        <img src="assets/images/pleat3.jpg" alt="" />
+        <img src="assets/images/pleat4.jpg" alt="" />
+        <img src="assets/images/pleat5.jpg" alt="" />
+        <img src="assets/images/pleat6.jpg" alt="" />
+        <img src="assets/images/pleat7.jpg" alt="" />
+        <img src="assets/images/pleat8.jpg" alt="" />
+      </lightgallery>
+      <lightgallery [settings]="settings" class="gallery-contents" *ngIf="abstract">
+        <img src="assets/images/abstract1.jpg" alt="" />
+        <img src="assets/images/abstract2.jpg" alt="" />
+        <img src="assets/images/abstract3.jpg" alt="" />
+        <img src="assets/images/abstract4.jpg" alt="" />
+        <img src="assets/images/abstract5.jpg" alt="" />
+        <img src="assets/images/abstract6.jpg" alt="" />
+        <img src="assets/images/abstract7.jpg" alt="" />
+        <img src="assets/images/abstract8.jpg" alt="" />
       </lightgallery>
     </span>
   </aside>

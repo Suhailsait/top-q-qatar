@@ -37,6 +37,70 @@
                     width: 100%;
                 }
             }
+            .types{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4rem;
+                .curtain{
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    width: 15rem;
+                    height: 5rem;
+                    border-radius: 3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: rgb(226, 224, 224);
+                    background-blend-mode: multiply;
+                    color: #FFF;
+                    cursor: pointer;
+                    &.electric{
+                        background-image: url("~src/assets/images/electric.jpg");
+                        &:hover{
+                            background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                        }
+                    }
+                    &.drapery{
+                        background-image: url("~src/assets/images/wavedrapery.jpg");
+                        &:hover{
+                            background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                        }
+                    }
+                    &.ring{
+                        background-image: url("~src/assets/images/ring.jpg");
+                        &:hover{
+                            background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                        }
+                    }
+                    &.pleat{
+                        background-image: url("~src/assets/images/pleat.jpg");
+                        &:hover{
+                            background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                        }
+                    }
+                    &.abstract{
+                        background-image: url("~src/assets/images/abstract.jpg");
+                        &:hover{
+                            background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                        }
+                    }
+                    &.active{
+                        background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                    }
+                   
+                }
+            }
             .gallery-contents {
                 display: flex;
                 flex-wrap: wrap;
