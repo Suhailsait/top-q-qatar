@@ -18,7 +18,23 @@
           </a>
           <span class="service-list">
             <ul class="lists">
-              <li><a href="services/curtains">Curtains</a></li>
+              <li class="curtain-sec">
+                <span class="material-icons expand">
+                  chevron_left
+                  </span>
+                <a href="services/curtains">Curtains</a>
+                
+                <span class="container">
+                  <span class="curtains">
+                    <span class="curtain" (click)="viewIndex(1)">Electric Curtains</span>
+                    <span class="curtain" (click)="viewIndex(2)">Wave Drapery</span>
+                    <span class="curtain" (click)="viewIndex(3)">Ring Top Curtains</span>
+                    <span class="curtain" (click)="viewIndex(4)">Wave Pleat Curtains</span>
+                    <span class="curtain" (click)="viewIndex(5)">Abstract Shower Curtains</span>
+                   </span>
+                </span>
+              
+              </li>
               <li><a href="services/furnishing">Furnishing</a></li>
               <li><a href="services/outdoor-fabric">Outdoor Fabrics</a></li>
               <li><a href="services/wooden-flooring">Wooden Flooring</a></li>
