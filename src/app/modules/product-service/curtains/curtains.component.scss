@@ -29,12 +29,13 @@
 
             .contents {
                 font-size: 1.8rem;
-                font-weight: 400;
+                font-weight: 300;
                 max-width: 80rem;
                 text-align: center;
-
+                line-height: 3rem;
                 @media only screen and (max-width:400px) {
                     width: 100%;
+                    line-height: 2rem;
                 }
             }
             .types{
