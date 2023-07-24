@@ -15,6 +15,7 @@ export class FurnishingsComponent implements OnInit {
 
   settings = {
     counter: false,
+    download:false,
     mobileSettings :{
       controls: true, showCloseIcon: true, download: false,
     }

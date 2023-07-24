@@ -67,9 +67,53 @@ header {
               text-shadow: none;
               li {
                 a {
-                  color: rgb(94, 94, 94);
+                  color: rgb(80, 80, 80);
                   &:hover {
                     color: rgb(163, 163, 163);
+                  }
+                }
+              }
+              .curtain-sec {
+                position: relative;
+                display: flex;
+                align-items: center;
+                .expand{
+                  font-size: 2.5rem;
+                    color: rgb(109, 109, 109);
+                     &:hover {
+                    color: rgb(163, 163, 163);
+                  }
+                }
+                .container{
+                  display: none;
+                  position: absolute;
+                  top: 0;
+                  left: -22.5rem;
+                  width: 24rem;
+                  .curtains {
+                    width: 20rem;
+                    padding: 2rem 4rem 2rem 2rem;
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    .curtain{
+                      color: rgb(94, 94, 94);
+                      cursor: pointer;
+                      &:hover {
+                        color: rgb(163, 163, 163);
+                      }
+                    }
+                  }
+                }
+                &:hover{
+                  .container{
+                    display: block;
+                    transition: transform 1s;
+                  }
+                  .expand{
+                    transform:rotate(360deg);
+                    transition: transform 0.8s;
                   }
                 }
               }
@@ -90,9 +134,9 @@ header {
       @media only screen and (max-width: 1000px) {
         display: flex;
       }
-      .toggle-button{
-        .close{
-          color: #FFF;
+      .toggle-button {
+        .close {
+          color: #fff;
         }
       }
       .menu-items {
@@ -185,6 +229,6 @@ header {
     }
   }
 }
-.fixed{
+.fixed {
   background-color: rgba(0, 0, 0, 0.9);
 }

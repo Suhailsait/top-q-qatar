@@ -10,11 +10,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        .content {
-            color: #FFF;
-            font-size: 2.5rem;
-            letter-spacing: 0.2rem;
-        }
     }
     .body {
         margin: 5rem 0;
@@ -26,15 +21,83 @@
             width: 95%;
             gap: 5rem;
             margin: 0 auto;
-
+            .content {
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
             .contents {
                 font-size: 1.8rem;
-                font-weight: 400;
+                font-weight: 300;
                 max-width: 80rem;
                 text-align: center;
-
+                line-height: 3rem;
                 @media only screen and (max-width:400px) {
                     width: 100%;
+                    line-height: 2rem;
+                }
+            }
+            .types{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 4rem;
+                .curtain{
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    width: 15rem;
+                    height: 5rem;
+                    border-radius: 3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: rgb(226, 224, 224);
+                    background-blend-mode: multiply;
+                    color: #FFF;
+                    cursor: pointer;
+                    &.electric{
+                        background-image: url("~src/assets/images/electric.jpg");
+                        &:hover{
+                            background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                        }
+                    }
+                    &.drapery{
+                        background-image: url("~src/assets/images/wavedrapery.jpg");
+                        &:hover{
+                            background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                        }
+                    }
+                    &.ring{
+                        background-image: url("~src/assets/images/ring.jpg");
+                        &:hover{
+                            background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                        }
+                    }
+                    &.pleat{
+                        background-image: url("~src/assets/images/pleat.jpg");
+                        &:hover{
+                            background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                        }
+                    }
+                    &.abstract{
+                        background-image: url("~src/assets/images/abstract.jpg");
+                        &:hover{
+                            background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                        }
+                    }
+                    &.active{
+                        background-color: rgb(39, 39, 39);
+                        border-radius: 1rem;
+                    }
+                   
                 }
             }
             .gallery-contents {
