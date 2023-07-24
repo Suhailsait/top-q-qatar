@@ -11,8 +11,10 @@
         align-items: center;
         justify-content: center;
     }
+
     .body {
         margin: 5rem 0;
+
         .container {
             display: flex;
             flex-direction: column;
@@ -21,30 +23,35 @@
             width: 95%;
             gap: 5rem;
             margin: 0 auto;
+
             .content {
                 font-size: 2.5rem;
                 font-weight: 500;
             }
+
             .contents {
                 font-size: 1.8rem;
                 font-weight: 300;
                 max-width: 80rem;
                 text-align: center;
                 line-height: 3rem;
+
                 @media only screen and (max-width:400px) {
                     width: 100%;
                     line-height: 2rem;
                 }
             }
-            .types{
+
+            .types {
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 4rem;
-                .curtain{
+
+                .curtain {
                     font-size: 1.3rem;
-                    font-weight: 600;
+                    font-weight: 500;
                     width: 15rem;
                     height: 5rem;
                     border-radius: 3rem;
@@ -58,65 +65,87 @@
                     background-blend-mode: multiply;
                     color: #FFF;
                     cursor: pointer;
-                    &.electric{
+
+                    &.electric {
                         background-image: url("~src/assets/images/electric.jpg");
-                        &:hover{
+                        background-color: rgb(100, 100, 100);
+                        background-blend-mode: multiply;
+
+                        &:hover {
                             background-color: rgb(39, 39, 39);
-                        border-radius: 1rem;
+                            border-radius: 1rem;
                         }
                     }
-                    &.drapery{
+
+                    &.drapery {
                         background-image: url("~src/assets/images/wavedrapery.jpg");
-                        &:hover{
-                            background-color: rgb(39, 39, 39);
-                        border-radius: 1rem;
+                        background-color: rgb(95, 95, 95);
+                        background-blend-mode: multiply;
+                        &:hover {
+                            background-color: rgb(35, 35, 35);
+                            border-radius: 1rem;
                         }
                     }
-                    &.ring{
+
+                    &.ring {
                         background-image: url("~src/assets/images/ring.jpg");
-                        &:hover{
-                            background-color: rgb(39, 39, 39);
-                        border-radius: 1rem;
+                        background-color: rgb(95, 95, 95);
+                        background-blend-mode: multiply;
+                        &:hover {
+                            background-color: rgb(35, 35, 35);
+                            border-radius: 1rem;
                         }
                     }
-                    &.pleat{
+
+                    &.pleat {
                         background-image: url("~src/assets/images/pleat.jpg");
-                        &:hover{
-                            background-color: rgb(39, 39, 39);
-                        border-radius: 1rem;
+                        background-color: rgb(95, 95, 95);
+                        background-blend-mode: multiply;
+                        &:hover {
+                            background-color: rgb(35, 35, 35);
+                            border-radius: 1rem;
                         }
                     }
-                    &.abstract{
+
+                    &.abstract {
                         background-image: url("~src/assets/images/abstract.jpg");
-                        &:hover{
-                            background-color: rgb(39, 39, 39);
-                        border-radius: 1rem;
+                        background-color: rgb(95, 95, 95);
+                        background-blend-mode: multiply;
+                        &:hover {
+                            background-color: rgb(35, 35, 35);
+                            border-radius: 1rem;
                         }
                     }
-                    &.active{
-                        background-color: rgb(39, 39, 39);
+
+                    &.active {
+                        background-color: rgb(35, 35, 35);
                         border-radius: 1rem;
                     }
-                   
+
                 }
             }
+
             .gallery-contents {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 0.2rem;
+
                 img {
                     width: 35rem;
                     height: 25rem;
                     cursor: zoom-in;
                     transition: all 0.3s;
                     overflow: hidden;
+
                     &:hover {
                         transform: scale(1.05);
+
                         @media only screen and (max-width: 426px) {
                             transform: none;
                         }
                     }
+
                     @media only screen and (max-width: 400px) {
                         width: 100%;
                     }
