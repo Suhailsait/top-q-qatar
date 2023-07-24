@@ -1,7 +1,7 @@
 <header [ngClass]="{'fixed':isScrolled}">
   <span class="container">
     <span class="logo">
-      <a href="">
+      <a href="javascript:void(0)" [routerLink]="['home']">
         <img src="assets/images/logo_full.png" alt="" />
       </a>
     </span>
@@ -19,11 +19,10 @@
           <span class="service-list">
             <ul class="lists">
               <li class="curtain-sec">
-                <a href="services/curtains">Curtains</a>
+                <a href="javascript:void(0)" [routerLink]="['services/curtains']">Curtains</a>
                 <span class="material-icons expand">
                   arrow_drop_down
                   </span>
-                
                 <span class="container">
                   <span class="curtains">
                     <span class="curtain" (click)="viewIndex(1)">Electric Curtains</span>
@@ -35,13 +34,13 @@
                 </span>
               
               </li>
-              <li><a href="services/furnishing">Furnishing</a></li>
-              <li><a href="services/outdoor-fabric">Outdoor Fabrics</a></li>
-              <li><a href="services/wooden-flooring">Wooden Flooring</a></li>
-              <li><a href="services/blinds">Blinds</a></li>
-              <li><a href="services/wallpapers">Wallpapers</a></li>
-              <li><a href="services/upholstery">Upholstery</a></li>
-              <li><a href="services/wallpanelling">Wallpanelling</a></li>
+              <li><a href="javascript:void(0)" [routerLink]="['services/furnishing']">Furnishing</a></li>
+              <li><a href="javascript:void(0)" [routerLink]="['services/outdoor-fabric']">Outdoor Fabrics</a></li>
+              <li><a href="javascript:void(0)" [routerLink]="['services/wooden-flooring']">Wooden Flooring</a></li>
+              <li><a href="javascript:void(0)" [routerLink]="['services/blinds']">Blinds</a></li>
+              <li><a href="javascript:void(0)" [routerLink]="['services/wallpapers']">Wallpapers</a></li>
+              <li><a href="javascript:void(0)" [routerLink]="['services/upholstery']">Upholstery</a></li>
+              <li><a href="javascript:void(0)" [routerLink]="['services/wallpanelling']">Wallpanelling</a></li>
             </ul>
           </span>
         </li>
@@ -82,48 +81,48 @@
               >HOME</a
             >
           </li>
-          <li class="services" (click)="showList()" [ngClass]="{ view: list }">
+          <li class="services" (click)="showList()" [ngClass]="{ view: list }"  routerLinkActive="active">
             <span class="link"
               >SERVICES
               <span class="material-icons expand"> chevron_right </span></span
             >
             <span class="service-list">
               <ul class="lists">
-                <li>
-                  <a href="services/curtains" (click)="toggleMenu()"
+                <li  routerLinkActive="active">
+                  <a href="javascript:void(0)"  [routerLink]="['services/curtains']" (click)="toggleMenu()"
                     >Curtains</a
                   >
                 </li>
-                <li>
-                  <a href="services/furnishing" (click)="toggleMenu()"
+                <li  routerLinkActive="active">
+                  <a href="javascript:void(0)"  [routerLink]="['services/furnishing']" (click)="toggleMenu()"
                     >Furnishing</a
                   >
                 </li>
-                <li>
-                  <a href="services/outdoor-fabric" (click)="toggleMenu()"
+                <li  routerLinkActive="active">
+                  <a href="javascript:void(0)" [routerLink]="['services/outdoor-fabric']" (click)="toggleMenu()"
                     >Outdoor Fabrics</a
                   >
                 </li>
-                <li>
-                  <a href="services/wooden-flooring" (click)="toggleMenu()"
+                <li  routerLinkActive="active">
+                  <a href="javascript:void(0)" [routerLink]="['services/wooden-flooring']" (click)="toggleMenu()"
                     >Wooden Flooring</a
                   >
                 </li>
-                <li>
-                  <a href="services/blinds" (click)="toggleMenu()">Blinds</a>
+                <li  routerLinkActive="active">
+                  <a href="javascript:void(0)" [routerLink]="['services/blinds']" (click)="toggleMenu()">Blinds</a>
                 </li>
-                <li>
-                  <a href="services/wallpapers" (click)="toggleMenu()"
+                <li  routerLinkActive="active">
+                  <a href="javascript:void(0)" [routerLink]="['services/wallpapers']" (click)="toggleMenu()"
                     >Wallpapers</a
                   >
                 </li>
-                <li>
-                  <a href="services/upholstery" (click)="toggleMenu()"
+                <li  routerLinkActive="active">
+                  <a href="javascript:void(0)" [routerLink]="['services/upholstery']" (click)="toggleMenu()"
                     >Upholstery</a
                   >
                 </li>
-                <li>
-                  <a href="services/wallpanelling" (click)="toggleMenu()"
+                <li  routerLinkActive="active">
+                  <a href="javascript:void(0)" [routerLink]="['services/wallpanelling']" (click)="toggleMenu()"
                     >Wallpanelling</a
                   >
                 </li>
