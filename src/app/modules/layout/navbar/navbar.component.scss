@@ -207,6 +207,11 @@ header {
                   a {
                     color: rgb(94, 94, 94);
                   }
+                  &.active{
+                    a{
+                      color: #cda274;
+                    }
+                  }
                 }
               }
             }
