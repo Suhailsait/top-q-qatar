@@ -108,6 +108,20 @@ section {
             .nums {
               display: flex;
               flex-direction: column;
+              align-items: center;
+                .land{
+                  display: flex;
+                  .num-head{
+                    width:6rem;
+                  }
+                }
+                  .phonenum{
+                  display: flex;
+                  .num-head{
+                    width:5rem;
+                  }
+                }
+                
             }
           }
         }
